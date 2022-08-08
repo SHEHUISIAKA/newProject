@@ -1,0 +1,148 @@
+<head>
+    <link href="./Resources/css/html.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,400&family=Roboto:ital,wght@1,100&family=Space+Mono&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+    <title>LEARNING HTML</title>
+</head>
+<body>
+   <header><h1 class="title">LEARNING HTML</h1></header>
+   <div id="topic1">
+        <h1 id="top">HTML STRUCTURE and ELEMENTS</h1>
+        <h3>HEADINGS</h3>
+        <p id="pg1">In HTML, there are six different headings, heading elements. Headings can be used for a variety of purposed, like titling sections, articles or other forms of content.<br><br> The following is the list of heading elements available in HTML. They are ordered from largest to smallest in size. <br><br><ol>
+            <li>&lt;h1&gt; - used for main headings. All other smaller headings are used for subheadings.</li>
+            <li>&lt;h2&gt;</li>
+            <li>&lt;h3&gt;</li>
+            <li>&lt;h4&gt;</li>
+            <li>&lt;h5&gt;</li>
+            <li>&lt;h6&gt;</li>
+        </ol><br><br> The following example code uses a headline intended to capture a reader's attention. It uses the largest heading available, the main heading element.<br><br>&lt;h1&gt;BREAKING NEWS&lt;/h1&gt;</p>
+        <h3>ELEMENTS</h3>
+        <ol>
+            <li><a href="#bottom">This is the bottom of HTML STRUCTURE and ELEMENTS</a></li>
+            <li><strong>Divs</strong><br><br> One of the most popular elements in HTML is the &lt;h1&gt;. &lt;h1&gt; is short for "division" or container that divides the page into sections.These sections are very useful for grouping elements in your HTML together.</li>
+            <li><strong>Attributes</strong><br><br>Attributes are content added to the opening tag of an element and can be used in several different ways, from providing information to changing styling. Attributes are made up of the following two parts<ul><li>The name of the attribute</li>
+            <li>The value of the attribute</li></ul><br><strong>List of Attributes</strong><ol>
+                <li>id</li><p>One commonly used attribute is the id. We can use the id attribute to specify different content (such as &lt;div&gt;S) and is really helpful when you use an element more than once. <br><br>When we add an id to a &lt;div&gt;, we place it in the opening tag:<br><br>&lt;div id="intro"&gt;<br>&lt;h1&gt;<strong>Introduction</strong>&lt;/h1&gt;<br>&lt;/div&gt;</p>
+                <li>class - &lt;div <srtong>class="title</srtong>&gt;&lt;/div&gt;</li>
+                <li>Image Alts<p>The alt attribute, which means alternative text, brings meaning to the images on our sites. The alt attribute can be added to the image tag just like the src attribute. The value of alt should be a description of the image</p><br>&lt;img <strong>src="#"A field of yellow sunflowers"</strong>/&gt;</li>
+            </ol></li>
+            </li>
+            <li><strong>VideoS</strong><p>The &lt;video&gt; element requires a src attribute with a link to the video source. Unlike the &lt;img&gt; element however, the &lt;video&gt; element requires an opening and a closing tag <br><br>&lt;video <em>src</em>="myVideo.mp4" width="320"&gt; height="240" contols<br>video not supported<br>&lt;/video&gt;</p><br><video src="https://www.youtube.com/watch?v=iX_QyjdctsQ" width="320" height="240" controls></video></li>
+            <li>Anchor &lt;a&gt;
+                <p id="bottom">You can add links to a web page by adding anchor element(&lt;a&gt;) and including the text of the link in between the opening and closing tags<br><br>&lt;a <em>href</em>="https://www.youtube.com/watch?v=iX_QyjdctsQ"&gt;This is a link To HTML elements and Tags&lt;/a&gt;<br><br><a href="https://www.youtube.com/watch?v=iX_QyjdctsQ" target="_blank">This is a link To HTML elements and Tags</a></p></li>
+            <li><a href="#top">This is the top of Learning Modules</a></li>
+        </ol> 
+    </div>
+    <div id="topic2">
+        <h1>HTML TABLES</h1>
+        <table>
+            <tr>
+                <th></th>
+                <th scope="col">Saturday</th>
+                <th scope="col">Sunday</th>
+            </tr>
+            <tr>
+                <th scope="row">Temperature</th>
+                <td>73</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td>Adam's Greenworks</td>
+                <td>14</td>
+                <td>Package Items</td>
+            </tr>
+        </table>
+        <table id="table1">
+            <tr>
+                <th scope="col">Company Name</th>
+                <th scope="col">Number of Items to Ship</th>
+                <th scope="col">Next action</th>
+            </tr>
+            <tr>
+                <td>Davie's Burgers</td>
+                <td>2</td>
+                <td>send Invoices</td>
+            </tr>
+            <tr>
+                <td>Baker's Bike Shop</td>
+                <td>3</td>
+                <td>Send Invoice<td>
+            </tr>
+            <tr>
+                <td>Miss Sally's Southern</td>
+                <td>4</td>
+                <td>Ship</td>
+            </tr>
+            <tr>
+                <td>Summit Resort Rentals</td>
+                <td>4</td>
+                <td>Ship</td>
+            </tr>
+            <tr>
+                <td>Strike Fitness</td>
+                <td>1</td>
+                <td>Enter order</td>
+            </tr>
+            <tr>
+                <td colspan="2">Out Of Town</td>
+                <td>Back In Town</td>
+            </tr>
+        </table>
+        <table id="table2">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Saturday</th>
+                    <th>Sunday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Morning</th>
+                    <td rowspan="2">Work</td>
+                    <td rowspan="3">Relax</td>
+                </tr>
+                <tr>
+                    <th>Afternoon</th>
+                </tr>
+                <tr>
+                    <th>Evening</th>
+                    <td>Dinner</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="table3">
+        <table>
+            <thead>
+                <tr>
+                    <th>Quarter</th>
+                    <th>Revenue</th>
+                    <th>Costs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Q1</th>
+                    <td>$10m</td>
+                    <td>$5.7m</td>
+                </tr>
+                <tr>
+                    <th>Q2</th>
+                    <td>$12m</td>
+                    <td>$5m</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total</th>
+                    <td>$12m</td>
+                    <td>$12.5m</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+        

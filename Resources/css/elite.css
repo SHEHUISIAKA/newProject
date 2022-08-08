@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+.base {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template: 200px 100px / repeat(10, 100px);
+    
+}
+
+.branch {
+   grid-row: 1 / 1;
+   grid-column: 1 / 2;
+}
+
+
+.downloads {
+    grid-row: 1 / 1;
+    grid-column: 3 / 4;
+}
+
+.service {
+    grid-row: 1 / 1;
+    grid-column: 5 / 6;
+}
+
+.details {
+    grid-row: 1 / 1;
+    grid-column: 7 / 8;
+}
+.habari {
+    grid-row: 2 / 2;
+    grid-column: 5 / 6;
+}
+.center {
+    grid-row: 2 / 2;
+    grid-column:  3 / 4;
+}
+
+.video {
+    grid-row: 2 / 2;
+    grid-column: 1 / 2;
+}
+p {
+    grid-row: 2 / 1;
+    grid-column: 1 / 2;
+}
+
+#heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+.container {
+    display: flex;
+    
+}
+.side {
+    width: 100px;
+    flex-grow: 1;
+}
+.center {
+    width: 100px;
+    flex-grow: 2;
+}

@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'GeneralFont';
+    src: url('fonts/Roboto.woff2') format('woff2'),
+         url('fonts/Roboto.woff') format('woff'),
+         url('fonts/Roboto.ttf') format('truetype');
+}
+
+* {
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(red, green, blue, alpha)
+
+}
+.title {
+    background-color: aquamarine;
+    color: brown;
+    font-family: 'GeneralFont', sans-serif
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+#table1, #table2, #table3 {
+    border: 2px solid red;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+p:hover {
+       background-color: blue;
+}
+
